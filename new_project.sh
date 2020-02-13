@@ -24,44 +24,41 @@ mkdir -p -v img
 echo 'Creating Files'
 
 #create index.html
-cp resources/index.html index.html
+cp ../resources/*.html ./
 
-#Change into scss to create style file there
-cd scss
+#Create style file in scss
 echo "/* Import Style Indexes ------- */
 @import 'base/_index';
 @import 'components/_index';
-@import 'utilities/_index';" > style.scss
+@import 'utilities/_index';" > scss/style.scss
 
 #change into base and make scss files...typogrophy,
-cd base 
-echo '/* Typography ------- */' > _typography.scss
+echo '/* Typography ------- */' > scss/base/_typography.scss
 
 #normilize,
-cp ../../resources/normalize.css _normilize.scss
+cp ../resources/*.scss ./scss/base/
 
 #imagies,
-echo '/* Images ------- */' > _images.scss
+echo '/* Images ------- */' > scss/base/_images.scss
 
 #and index.
 echo "/* Import Index ------- */
 
 @import '_typography';
 @import '_normilize';
-@import '_image';" > _index.scss
+@import '_image';" > scss/base/_index.scss
 
 #change into components and make scss files...navigation,
-cd ../components
-echo '/* Navigation ------- */' > _navigation.scss
+echo '/* Navigation ------- */' > scss/components/_navigation.scss
 
 #grid,
-echo '/* Grid ------- */' > _grid.scss
+echo '/* Grid ------- */' > scss/components/_grid.scss
 
 #form,
-echo '/* Forms ------- */' > _form.scss
+echo '/* Forms ------- */' > scss/components/_form.scss
 
 #button,
-echo '/* Buttons ------- */' > _button.scss
+echo '/* Buttons ------- */' > scss/components/_button.scss
 
 #and index.
 echo "/* Import Index ------- */
@@ -69,24 +66,23 @@ echo "/* Import Index ------- */
 @import '_navigation';
 @import '_grid';
 @import '_form';
-@import '_button';" > _index.scss
+@import '_button';" > scss/components/_index.scss
 
-#change into utilites and make scss files...variables,
-cd ../utilities
-echo '/* Variables ------- */' > _variables.scss
+#scss/utilities and make scss files...variables,
+echo '/* Variables ------- */' > scss/utilities/_variables.scss
 
 #mixins,
-echo '/* Mixins ------- */' > _mixins.scss
+echo '/* Mixins ------- */' > scss/utilities/_mixins.scss
 
 #functions,
-echo '/* Functions ------- */' > _functions.scss
+echo '/* Functions ------- */' > scss/utilities/_functions.scss
 
 #and index.
 echo "/* Import Index ------- */
 
 @import '_variables';
 @import '_mixins';
-@import '_functions';" > _index.scss
+@import '_functions';" > scss/utilities/_index.scss
 
 #all done
 echo 'Done! Go make a website!'
