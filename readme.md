@@ -1,15 +1,13 @@
--------------------------------------------------------------------
-|             Hayden Young - Created FEB 12 2020                  |
-|                 Updated FEB 12 2020                             |
-|                                                                 |
-| This is a simple script I wrote to set up new projects quickly. |
--------------------------------------------------------------------
+
+#Hayden Young - Created FEB 12 2020
+##Updated FEB 12 2020
+###This is a simple script I wrote to set up new projects quickly.
+
 
 When run from the terminal with an argument for the Project's name it will create the following file system and files.
 
----
-Example:
 
+```
 ~$ bash ./new_project.sh example_output
 
 Builds:
@@ -35,7 +33,7 @@ Builds:
   | | | _functions.scss
   | | | _mixins.scss
   | | | _variables.scss
----
+```
 
 It will copy all .scss and .html files to the project/scss/base and project/ directories. Feel free to ass your own stuff or edit those files!
 
