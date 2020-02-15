@@ -38,12 +38,11 @@ echo '/* Typography ------- */' > scss/base/_typography.scss
 #normilize,
 cp ../resources/*.scss ./scss/base/
 
-#imagies,
+#images,
 echo '/* Images ------- */' > scss/base/_images.scss
 
 #and index.
 echo "/* Import Index ------- */
-
 @import '_typography';
 @import '_normilize';
 @import '_image';" > scss/base/_index.scss
@@ -62,7 +61,6 @@ echo '/* Buttons ------- */' > scss/components/_button.scss
 
 #and index.
 echo "/* Import Index ------- */
-
 @import '_navigation';
 @import '_grid';
 @import '_form';
@@ -79,7 +77,6 @@ echo '/* Functions ------- */' > scss/utilities/_functions.scss
 
 #and index.
 echo "/* Import Index ------- */
-
 @import '_variables';
 @import '_mixins';
 @import '_functions';" > scss/utilities/_index.scss
