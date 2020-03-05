@@ -28,8 +28,7 @@ cp ../resources/*.html ./
 
 #Create style file in scss
 echo "/* Import Style Indexes ------- */
-@import 'base/_index';
-@import 'components/_index';
+@import 'utilities/_index';
 @import 'utilities/_index';" > scss/style.scss
 
 #change into base and make scss files...typogrophy,
@@ -45,7 +44,7 @@ echo '/* Images ------- */' > scss/base/_images.scss
 echo "/* Import Index ------- */
 @import '_typography';
 @import '_normilize';
-@import '_image';" > scss/base/_index.scss
+@import '_images';" > scss/base/_index.scss
 
 #change into components and make scss files...navigation,
 echo '/* Navigation ------- */' > scss/components/_navigation.scss
@@ -78,8 +77,8 @@ echo '/* Functions ------- */' > scss/utilities/_functions.scss
 #and index.
 echo "/* Import Index ------- */
 @import '_variables';
-@import '_mixins';
-@import '_functions';" > scss/utilities/_index.scss
+@import '_functions';
+@import '_mixins';" > scss/utilities/_index.scss
 
 #all done
 echo 'Done! Go make a website!'
